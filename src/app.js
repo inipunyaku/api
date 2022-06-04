@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(articleRouter);
 app.use(usersRouter);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Example app listening on http://localhost:3000");
 });
 
